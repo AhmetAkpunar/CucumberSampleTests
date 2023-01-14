@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.648">
+    <testcase classname="US101 kullanıcı demoqa sitesinde test yapar" name="TC01 kullanici demoqa sitesinde alert uzerindekiyi yaziyi test eder" time="21.426">
+        <failure message="element not interactable&#10;  (Session info: chrome=108.0.5359.126)&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9a2a5548e4fca76e30c9e25c5896a3c7, clickElement {id=bd9af9a2-de47-4655-b2c5-9ed2516644bd}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ahmet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:7517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:7517/devtool..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (9a2a5548e4fca76e30c9e25c5896a3c7)] -&gt; xpath: (//li[@id='item-1'])[1]]&#10;Session ID: 9a2a5548e4fca76e30c9e25c5896a3c7" type="org.openqa.selenium.ElementNotInteractableException">
+            <![CDATA[Given kullanici "demoUrl" sayfa gider.......................................passed
+Then Alerts'e tiklar........................................................failed
+Then On button click, alert will appear after bes seconds karsisindaki click me butonuna basin.skipped
+Then Alert’in gorunur olmasini bekleyin.....................................skipped
+Then Alert uzerindeki yazinin “This alert appeared after bes seconds” oldugunu test edin.skipped
+Then Ok diyerek alerti kapatin..............................................skipped
+And Sayfayi kapatin.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.126)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a2a5548e4fca76e30c9e25c5896a3c7, clickElement {id=bd9af9a2-de47-4655-b2c5-9ed2516644bd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ahmet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:7517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:7517/devtool..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9a2a5548e4fca76e30c9e25c5896a3c7)] -> xpath: (//li[@id='item-1'])[1]]
+Session ID: 9a2a5548e4fca76e30c9e25c5896a3c7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at stepdefinitions.Demoqa_stepdefinitions.alerts_e_tiklar(Demoqa_stepdefinitions.java:27)
+	at ✽.Alerts'e tiklar(file:///C:/Users/ahmet/IdeaProjects/cucumberFromScratch/src/test/resources/features/Us101_ilkTestCase.feature:8)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
